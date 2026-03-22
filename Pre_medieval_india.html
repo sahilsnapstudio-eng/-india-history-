@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>मध्यकालीन भारत — FINAL | CGVyapam DEO & सहायक ग्रेड-3</title>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&family=Cinzel:wght@600;800&family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0f0c07; --parch:#f5edd8; --parch2:#efe4c8; --light:#fdf8ef;
+  --gold:#c8922a; --gold2:#e8b84b; --rust:#8b2500; --rust2:#c03a1a;
+  --teal:#1a5c52; --navy:#162d4a; --sage:#3d6b47; --maroon:#6b1a2a;
+  --sand:#d4a96a; --shadow:0 4px 24px rgba(15,12,7,.13);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--ink);font-family:'Hind',sans-serif;color:var(--ink);font-size:14px;}
+
+/* PROGRESS */
+#prog{position:fixed;top:0;left:0;height:3px;z-index:999;
+  background:linear-gradient(90deg,var(--rust2),var(--gold2),var(--rust2));transition:width .15s;}
+
+/* HEADER */
+header{background:var(--ink);border-bottom:2px solid rgba(200,146,42,.25);position:relative;overflow:hidden;}
+.hpat{position:absolute;inset:0;
+  background-image:
+    repeating-linear-gradient(0deg,transparent,transparent 36px,rgba(200,146,42,.04) 36px,rgba(200,146,42,.04) 37px),
+    repeating-linear-gradient(90deg,transparent,transparent 36px,rgba(200,146,42,.04) 36px,rgba(200,146,42,.04) 37px);}
+.hinner{position:relative;padding:28px 20px 20px;text-align:center;}
+.dots{display:flex;justify-content:center;gap:5px;margin-bottom:14px;opacity:.4;}
+.dots span{width:10px;height:10px;border:1.5px solid var(--gold);border-radius:50%;display:inline-block;}
+.dots span:nth-child(3n+1){background:var(--gold);width:7px;height:7px;}
+.epill{display:inline-block;border:1px solid var(--gold);color:var(--gold);
+  font-family:'Cinzel',serif;font-size:9px;font-weight:600;letter-spacing:3px;
+  padding:4px 18px;border-radius:2px;margin-bottom:12px;text-transform:uppercase;}
+h1{font-family:'Tiro Devanagari Hindi',serif;font-size:clamp(20px,5vw,42px);
+  color:var(--gold2);line-height:1.25;text-shadow:0 2px 20px rgba(200,146,42,.3);}
+.h1sub{font-family:'Cinzel',serif;font-size:clamp(8px,1.8vw,11px);color:rgba(200,146,42,.6);
+  letter-spacing:2.5px;display:block;margin-top:5px;}
+.divg{height:2px;background:linear-gradient(90deg,transparent,var(--gold),var(--gold2),var(--gold),transparent);
+  margin:14px auto;width:55%;}
+.hnote{font-size:12px;color:rgba(212,169,106,.65);font-style:italic;}
+
+/* STATS */
+.stats{background:rgba(200,146,42,.07);border-bottom:1px solid rgba(200,146,42,.15);
+  padding:9px 16px;display:flex;justify-content:center;gap:20px;flex-wrap:wrap;}
+.st{color:var(--gold);font-family:'Cinzel',serif;font-size:10px;font-weight:600;
+  letter-spacing:.8px;display:flex;align-items:center;gap:5px;}
+
+/* NAV */
+.nav{background:#15120a;border-bottom:2px solid rgba(200,146,42,.2);
+  overflow-x:auto;scrollbar-width:none;display:flex;
+  position:sticky;top:0;z-index:90;}
+.nav::-webkit-scrollbar{display:none;}
+.nt{padding:12px 14px;color:rgba(200,146,42,.45);font-family:'Cinzel',serif;
+  font-size:10px;font-weight:600;letter-spacing:.6px;white-space:nowrap;
+  cursor:pointer;border-bottom:2px solid transparent;transition:all .25s;flex-shrink:0;}
+.nt:hover{color:var(--gold);}
+.nt.on{color:var(--gold2);border-bottom-color:var(--gold2);background:rgba(200,146,42,.07);}
+
+/* MAIN */
+main{background:var(--parch);}
+.sec{display:none;}
+.sec.on{display:block;}
+
+/* PILLAR HEADER */
+.ph{padding:20px 18px 14px;background:linear-gradient(180deg,var(--parch2),var(--parch));
+  border-bottom:1px solid rgba(15,12,7,.08);position:relative;}
+.ph::after{content:'';position:absolute;bottom:0;left:18px;right:18px;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);}
+.pnum{font-family:'Cinzel',serif;font-size:8.5px;font-weight:800;letter-spacing:3px;
+  color:var(--rust2);display:inline-block;margin-bottom:5px;}
+.ptitle{font-family:'Tiro Devanagari Hindi',serif;font-size:clamp(16px,3.5vw,24px);
+  color:var(--ink);line-height:1.3;}
+.psub{margin-top:4px;font-size:11.5px;color:rgba(15,12,7,.48);font-style:italic;}
+
+/* GRID */
+.grid{padding:16px;}
+
+/* CARDS */
+.card{background:var(--light);border-radius:6px;margin-bottom:13px;
+  box-shadow:var(--shadow);overflow:hidden;border-top:3px solid var(--gold);}
+.card.r{border-top-color:var(--rust2);}
+.card.t{border-top-color:var(--teal);}
+.card.n{border-top-color:var(--navy);}
+.card.s{border-top-color:var(--sage);}
+.card.m{border-top-color:var(--maroon);}
+.card.g{border-top-color:var(--sand);}
+
+.ch{padding:11px 15px;display:flex;align-items:center;gap:9px;
+  border-bottom:1px solid rgba(15,12,7,.06);}
+.card .ch{background:rgba(200,146,42,.04);}
+.card.r .ch{background:rgba(192,58,26,.05);}
+.card.t .ch{background:rgba(26,92,82,.05);}
+.card.n .ch{background:rgba(22,45,74,.05);}
+.card.s .ch{background:rgba(61,107,71,.05);}
+.card.m .ch{background:rgba(107,26,42,.05);}
+.ci{font-size:19px;flex-shrink:0;}
+.ct{font-family:'Tiro Devanagari Hindi',serif;font-size:14.5px;color:var(--ink);flex:1;line-height:1.3;}
+.hot{background:var(--rust2);color:#fff;font-family:'Cinzel',serif;font-size:7.5px;
+  font-weight:700;padding:2px 7px;border-radius:2px;letter-spacing:.8px;white-space:nowrap;}
+.ntag{background:var(--teal);color:#fff;font-family:'Cinzel',serif;font-size:7.5px;
+  font-weight:700;padding:2px 7px;border-radius:2px;letter-spacing:.8px;white-space:nowrap;}
+.cb{padding:13px 15px;}
+
+/* TABLE */
+table{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:6px;}
+th{background:var(--ink);color:var(--gold2);padding:8px 11px;text-align:left;
+  font-family:'Cinzel',serif;font-size:9.5px;font-weight:600;letter-spacing:.4px;}
+td{padding:7px 11px;border-bottom:1px solid rgba(15,12,7,.07);vertical-align:top;line-height:1.55;}
+tr:nth-child(even) td{background:var(--parch2);}
+tr:hover td{background:#eeddb5;}
+.hl{color:var(--rust);font-weight:600;}
+
+/* CHIPS */
+.chips{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:9px;margin-top:9px;}
+.chip{background:var(--parch2);border-left:3px solid var(--gold);border-radius:3px;
+  padding:9px 11px;display:flex;gap:8px;align-items:flex-start;}
+.chip.r{border-left-color:var(--rust2);}
+.chip.t{border-left-color:var(--teal);}
+.chip.n{border-left-color:var(--navy);}
+.chip.s{border-left-color:var(--sage);}
+.chip.m{border-left-color:var(--maroon);}
+.cnum{min-width:21px;height:21px;background:var(--gold);color:var(--ink);
+  border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:9.5px;font-weight:700;flex-shrink:0;font-family:'Cinzel',serif;}
+.chip.r .cnum{background:var(--rust2);color:#fff;}
+.chip.t .cnum{background:var(--teal);color:#fff;}
+.chip.n .cnum{background:var(--navy);color:#fff;}
+.chip.s .cnum{background:var(--sage);color:#fff;}
+.chip.m .cnum{background:var(--maroon);color:#fff;}
+.ctxt{font-size:12.5px;line-height:1.55;color:var(--ink);}
+.ctxt strong{color:var(--rust);display:block;font-size:11.5px;margin-bottom:1px;
+  font-family:'Cinzel',serif;letter-spacing:.2px;}
+
+/* IMP BOX */
+.imp{background:linear-gradient(135deg,#fff8e8,#fdefc8);border:1.5px solid var(--sand);
+  border-radius:6px;padding:12px 14px;margin-bottom:12px;}
+.imp::before{content:'⭐ परीक्षा में अवश्य पूछे जाते हैं';display:block;
+  font-family:'Cinzel',serif;font-weight:700;font-size:8.5px;color:var(--rust);
+  letter-spacing:1.5px;margin-bottom:7px;text-transform:uppercase;}
+.imp ul{list-style:none;display:grid;gap:5px;}
+.imp li{font-size:12.5px;padding-left:14px;position:relative;line-height:1.55;}
+.imp li::before{content:'◆';position:absolute;left:0;color:var(--gold);font-size:8px;top:3px;}
+
+/* TIMELINE */
+.tl{position:relative;padding-left:26px;margin:8px 0;}
+.tl::before{content:'';position:absolute;left:7px;top:4px;bottom:4px;width:2px;
+  background:linear-gradient(180deg,var(--rust2),var(--gold),var(--rust2));border-radius:2px;}
+.tli{position:relative;margin-bottom:12px;}
+.tli::before{content:'';position:absolute;left:-20px;top:5px;width:11px;height:11px;
+  background:var(--parch);border:2px solid var(--gold);border-radius:50%;}
+.tly{font-family:'Cinzel',serif;font-weight:700;font-size:11px;color:var(--rust);margin-bottom:1px;}
+.tle{font-size:12.5px;color:var(--ink);line-height:1.55;}
+
+/* TRICK */
+.trick{background:var(--ink);border-radius:6px;padding:13px 15px;margin-bottom:12px;
+  border:1px solid rgba(200,146,42,.18);}
+.trick h4{font-family:'Cinzel',serif;font-size:9.5px;letter-spacing:2px;
+  color:var(--rust2);margin-bottom:8px;text-transform:uppercase;}
+.ti{background:rgba(200,146,42,.08);border:1px solid rgba(200,146,42,.15);
+  border-radius:4px;padding:8px 10px;margin-bottom:6px;
+  font-size:12.5px;line-height:1.6;color:var(--gold2);}
+.ti strong{color:var(--rust2);}
+
+/* END BOX */
+.ebox{background:linear-gradient(135deg,#1a0a00,#2d0a0a);border:1.5px solid var(--rust);
+  border-radius:7px;padding:14px;margin-bottom:12px;}
+.ebox h4{font-family:'Cinzel',serif;font-size:9.5px;letter-spacing:2px;
+  color:var(--rust2);margin-bottom:9px;text-transform:uppercase;}
+.ei{background:rgba(178,34,34,.12);border:1px solid rgba(178,34,34,.25);
+  border-radius:4px;padding:8px 10px;margin-bottom:6px;
+  font-size:12.5px;line-height:1.6;color:#ffb3b3;}
+.ei strong{color:#ff7755;}
+
+/* FIRSTS BOX — special */
+.fbox{background:linear-gradient(135deg,#0a1a0f,#0a0f1a);border:1.5px solid var(--teal);
+  border-radius:7px;padding:14px;margin-bottom:12px;}
+.fbox h4{font-family:'Cinzel',serif;font-size:9.5px;letter-spacing:2px;
+  color:#4ecba0;margin-bottom:9px;text-transform:uppercase;}
+.fi{background:rgba(26,92,82,.15);border:1px solid rgba(26,92,82,.3);
+  border-radius:4px;padding:8px 10px;margin-bottom:6px;
+  font-size:12.5px;line-height:1.6;color:#a8f0d8;display:flex;gap:9px;align-items:flex-start;}
+.fbadge{min-width:36px;height:20px;background:var(--teal);color:#fff;
+  border-radius:3px;display:flex;align-items:center;justify-content:center;
+  font-family:'Cinzel',serif;font-size:9px;font-weight:700;flex-shrink:0;}
+.fi-txt{color:#c8f0e0;font-size:12.5px;line-height:1.55;}
+.fi-txt strong{color:#4ecba0;}
+
+/* TWO COL */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+@media(max-width:650px){.two{grid-template-columns:1fr;}}
+
+/* ALERT */
+.alert{background:#fff0e8;border:1.5px solid var(--rust2);border-radius:5px;
+  padding:11px 13px;margin-bottom:11px;font-size:12.5px;color:var(--rust);line-height:1.6;}
+.alert strong{display:block;font-family:'Cinzel',serif;font-size:8.5px;
+  letter-spacing:1px;margin-bottom:3px;text-transform:uppercase;}
+
+/* SECTION BADGE */
+.sbadge{display:inline-block;background:var(--rust2);color:#fff;
+  font-family:'Cinzel',serif;font-size:8.5px;font-weight:700;
+  padding:3px 10px;border-radius:2px;letter-spacing:1px;margin-bottom:7px;text-transform:uppercase;}
+
+/* DYNASTY TAGS */
+.dtag{display:inline-block;padding:2px 8px;border-radius:2px;
+  font-size:10px;font-weight:600;font-family:'Cinzel',serif;letter-spacing:.3px;margin:2px;}
+.ds{background:#ffe8e8;color:var(--rust);border:1px solid var(--rust);}
+.dk{background:#e8eeff;color:var(--navy);border:1px solid var(--navy);}
+.dtg{background:#e8f5ee;color:var(--sage);border:1px solid var(--sage);}
+.dl{background:#f5e8f0;color:var(--maroon);border:1px solid var(--maroon);}
+
+/* MCQ */
+.mcq{background:var(--light);border:1px solid rgba(15,12,7,.1);border-radius:6px;
+  padding:14px;margin-bottom:10px;box-shadow:var(--shadow);}
+.mqq{font-family:'Tiro Devanagari Hindi',serif;font-size:13.5px;color:var(--ink);
+  margin-bottom:9px;line-height:1.65;}
+.mqq strong{color:var(--rust);font-family:'Cinzel',serif;font-size:11px;}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-bottom:8px;}
+@media(max-width:480px){.opts{grid-template-columns:1fr;}}
+.opt{padding:7px 11px;border:1.5px solid rgba(15,12,7,.13);border-radius:4px;
+  font-size:12.5px;cursor:pointer;transition:all .2s;background:var(--parch2);}
+.opt:hover{border-color:var(--gold);background:#fff8e8;}
+.opt.ok{background:#e8f5e8;border-color:var(--sage);color:var(--sage);font-weight:600;}
+.opt.no{background:#fde8e8;border-color:var(--rust2);color:var(--rust2);}
+.mans{display:none;background:#eef6ee;border:1px solid var(--sage);border-radius:4px;
+  padding:9px 11px;font-size:12.5px;color:#1a4a1a;line-height:1.6;margin-top:5px;}
+.mans.on{display:block;}
+.sbtn{background:var(--rust2);color:#fff;border:none;padding:5px 13px;
+  border-radius:4px;font-size:11px;cursor:pointer;font-family:'Cinzel',serif;
+  font-weight:600;letter-spacing:.5px;transition:background .2s;}
+.sbtn:hover{background:var(--rust);}
+
+/* SCORE */
+.scorebox{background:var(--ink);border:1.5px solid var(--gold);border-radius:8px;
+  padding:14px;margin-bottom:14px;text-align:center;display:none;}
+.scorebox.on{display:block;}
+.score-val{font-family:'Cinzel',serif;font-size:28px;color:var(--gold2);font-weight:800;}
+.score-lbl{font-family:'Cinzel',serif;font-size:10px;color:rgba(200,146,42,.7);
+  letter-spacing:2px;text-transform:uppercase;margin-top:4px;}
+
+/* SCROLL TOP */
+.stbtn{position:fixed;bottom:16px;right:16px;width:40px;height:40px;
+  background:var(--rust2);color:#fff;border:none;border-radius:50%;
+  font-size:18px;cursor:pointer;box-shadow:0 4px 16px rgba(139,37,0,.4);
+  z-index:99;transition:transform .2s;}
+.stbtn:hover{transform:translateY(-3px);}
+
+/* ANIMATE */
+@keyframes fu{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+.sec.on .grid{animation:fu .35s ease both;}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+
+<header>
+  <div class="hpat"></div>
+  <div class="hinner">
+    <div class="dots">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span>
+    </div>
+    <div class="epill">CGVyapam · DEO · सहायक ग्रेड-3 · FINAL VERSION</div>
+    <h1>मध्यकालीन भारत — सम्पूर्ण नोट्स
+      <span class="h1sub">Post-Chola to 1857 · Pillar by Pillar · All Gaps Filled</span>
+    </h1>
+    <div class="divg"></div>
+    <p class="hnote">चोल वंश के बाद से मध्यकाल के अंत तक — Indian History Perspective</p>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="st">📜 10 Pillars</div>
+  <div class="st">❓ 32 MCQs</div>
+  <div class="st">⭐ 230+ Exam Facts</div>
+  <div class="st">🆕 तैमूर · प्रथम बार · औरंगजेब</div>
+  <div class="st">🧠 Memory Tricks</div>
+</div>
+
+<nav class="nav">
+  <div class="nt on" onclick="go(0)">① राजपूत काल</div>
+  <div class="nt"    onclick="go(1)">② अरब/तुर्क आक्रमण</div>
+  <div class="nt"    onclick="go(2)">③ दिल्ली सल्तनत</div>
+  <div class="nt"    onclick="go(3)">④ मुगल साम्राज्य</div>
+  <div class="nt"    onclick="go(4)">⑤ औरंगजेब विस्तार</div>
+  <div class="nt"    onclick="go(5)">⑥ मुगल पतन + अंत</div>
+  <div class="nt"    onclick="go(6)">⑦ मराठा साम्राज्य</div>
+  <div class="nt"    onclick="go(7)">⑧ विजयनगर/बहमनी</div>
+  <div class="nt"    onclick="go(8)">⑨ सूफी·भक्ति·कला·साहित्य</div>
+  <div class="nt"    onclick="go(9)">⑩ MCQ अभ्यास</div>
+</nav>
+
+<main>
+
+<!-- ═══════════════════════════════════════════════
+     PILLAR 1 — RAJPUT KAAL
+═══════════════════════════════════════════════ -->
+<div class="sec on" id="s0">
+  <div class="ph">
+    <div class="pnum">PILLAR 01 · चोल के ठीक बाद से</div>
+    <div class="ptitle">राजपूत काल (700 – 1200 ई.) — प्रारम्भिक मध्यकाल</div>
+    <div class="psub">उत्तर भारत में राजपूत शक्तियाँ — चोल काल के समानांतर</div>
+  </div>
+  <div class="grid">
+
+    <div class="alert">
+      <strong>📌 चोल के बाद से मध्यकाल कहाँ से शुरू होता है?</strong>
+      चोल वंश दक्षिण में था (850–1279 ई.)। उसी समय उत्तर भारत में <strong>राजपूत वंश</strong> और <strong>त्रिपक्षीय संघर्ष</strong> चल रहा था। यहीं से मध्यकालीन भारतीय इतिहास की शुरुआत मानी जाती है।
+    </div>
+
+    <div class="imp">
+      <ul>
+        <li><strong>त्रिपक्षीय संघर्ष</strong> — गुर्जर-प्रतिहार, पाल, राष्ट्रकूट — कन्नौज के लिए लड़े</li>
+        <li>पृथ्वीराज चौहान — <strong>तराइन-I (1191)</strong> जीते, <strong>तराइन-II (1192)</strong> में हारे → मुस्लिम शासन की शुरुआत</li>
+        <li>खजुराहो मंदिर — <strong>चंदेल वंश</strong> ने बनाए</li>
+        <li>राजा भोज (परमार वंश) — <strong>विद्वान राजा</strong> — "भोजशाला" निर्माण</li>
+        <li>राजपूतों की कमजोरी — <strong>आपसी फूट, केंद्रीय शक्ति का अभाव</strong></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="ch"><span class="ci">🏹</span><span class="ct">प्रमुख राजपूत वंश — सम्पूर्ण तालिका</span><span class="hot">TOP ASKED</span></div>
+      <div class="cb">
+        <table>
+          <tr><th>वंश</th><th>राजधानी / क्षेत्र</th><th>प्रमुख शासक</th><th>विशेषता</th></tr>
+          <tr><td><span class="dtag ds">गुर्जर-प्रतिहार</span></td><td>कन्नौज</td><td>नागभट्ट II, भोज</td><td>अरब आक्रमण रोके | त्रिपक्षीय संघर्ष</td></tr>
+          <tr><td><span class="dtag dk">पाल वंश</span></td><td>बंगाल, बिहार</td><td>धर्मपाल, देवपाल</td><td>बौद्ध धर्म संरक्षण | नालंदा विश्वविद्यालय</td></tr>
+          <tr><td><span class="dtag dtg">राष्ट्रकूट</span></td><td>मान्यखेत (दक्षिण)</td><td>ध्रुव, अमोघवर्ष, इंद्र III</td><td>एलोरा गुफाएँ | अरब व्यापारियों से संबंध</td></tr>
+          <tr><td><span class="dtag dl">चौहान</span></td><td>अजमेर</td><td>पृथ्वीराज चौहान III</td><td>तराइन-I जीते (1191), तराइन-II हारे (1192)</td></tr>
+          <tr><td><span class="dtag ds">चंदेल</span></td><td>बुंदेलखंड</td><td>विद्याधर</td><td>खजुराहो मंदिर (950–1050 ई.)</td></tr>
+          <tr><td><span class="dtag dk">परमार</span></td><td>धारा (मालवा)</td><td>राजा भोज</td><td>भोजशाला | "कवि राजा"</td></tr>
+          <tr><td><span class="dtag dtg">गहड़वाल</span></td><td>वाराणसी</td><td>जयचंद</td><td>तराइन-II — गोरी को निमंत्रण दिया</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="two">
+      <div class="card t">
+        <div class="ch"><span class="ci">⚔️</span><span class="ct">तराइन के युद्ध</span><span class="hot">TOP MCQ</span></div>
+        <div class="cb">
+          <table>
+            <tr><th>युद्ध</th><th>वर्ष</th><th>परिणाम</th></tr>
+            <tr><td class="hl">तराइन प्रथम</td><td>1191</td><td>पृथ्वीराज जीते — गोरी भागा</td></tr>
+            <tr><td class="hl">तराइन द्वितीय</td><td>1192</td><td>गोरी जीता — पृथ्वीराज पराजित + मृत्यु</td></tr>
+            <tr><td class="hl">चंदावर</td><td>1194</td><td>गोरी vs जयचंद → जयचंद पराजित</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="card n">
+        <div class="ch"><span class="ci">🏛️</span><span class="ct">चोल वंश — Quick Recap</span><span class="ntag">RECAP</span></div>
+        <div class="cb">
+          <table>
+            <tr><th>बिंदु</th><th>विवरण</th></tr>
+            <tr><td class="hl">राजराज प्रथम</td><td>बृहदेश्वर मंदिर (तंजावुर) | 985–1014</td></tr>
+            <tr><td class="hl">राजेंद्र चोल</td><td>"गंगैकोंड चोल" | बंगाल तक विजय</td></tr>
+            <tr><td class="hl">शासन विशेषता</td><td>ग्राम सभाएँ (उर/नाडु) — स्थानीय स्वशासन</td></tr>
+            <tr><td class="hl">नौसेना</td><td>शक्तिशाली नौसेना — मलय/श्रीलंका तक</td></tr>
+            <tr><td class="hl">अंत</td><td>1279 ई. — इसके बाद विजयनगर साम्राज्य</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="trick">
+      <h4>🧠 राजपूत काल — Memory Tricks</h4>
+      <div class="ti"><strong>त्रिपक्षीय संघर्ष:</strong> <strong>"P·P·R"</strong> → प्रतिहार · पाल · राष्ट्रकूट — तीनों कन्नौज चाहते थे → "तीनों लड़े, तीनों हारे"</div>
+      <div class="ti"><strong>तराइन Trick:</strong> 1191 = प्रथम = पृथ्वीराज प्रथम (जीता) | 1192 = द्वितीय = दूसरे में हारा → बस एक साल का फर्क!</div>
+      <div class="ti"><strong>खजुराहो = चंदेल | बृहदेश्वर = चोल | भोजशाला = परमार</strong> — तीनों अलग-अलग, परीक्षा में गड़बड़ाते हैं!</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     PILLAR 2 — ARAB / TURK
+═══════════════════════════════════════════════ -->
+<div class="sec" id="s1">
+  <div class="ph">
+    <div class="pnum">PILLAR 02</div>
+    <div class="ptitle">अरब व तुर्क आक्रमण (711 – 1206 ई.)</div>
+    <div class="psub">Muhammad bin Qasim → Ghazni → Ghori — dates बहुत पूछी जाती हैं</div>
+  </div>
+  <div class="grid">
+    <div class="imp">
+      <ul>
+        <li>मुहम्मद बिन कासिम — <strong>712 ई.</strong> — सिंध पर अरब विजय — राजा दाहिर पराजित</li>
+        <li>महमूद गजनवी — <strong>17 बार आक्रमण (1000–1027)</strong> — केवल <strong>धन लूटना</strong> उद्देश्य</li>
+        <li>सबसे प्रसिद्ध — <strong>सोमनाथ मंदिर लूट (1025 ई.)</strong></li>
+        <li>मुहम्मद गोरी — उद्देश्य <strong>स्थायी इस्लामी राज्य</strong> — 1192 के बाद सफल</li>
+        <li>अलबेरूनी — गजनवी के साथ आया — <strong>किताब-उल-हिंद</strong> लिखी (भारत का विवरण)</li>
+      </ul>
+    </div>
+    <div class="two">
+      <div class="card r">
+        <div class="ch"><span class="ci">🪙</span><span class="ct">महमूद गजनवी (998–1030)</span><span class="hot">TOP ASKED</span></div>
+        <div class="cb">
+          <table>
+            <tr><th>बिंदु</th><th>विवरण</th></tr>
+            <tr><td class="hl">आक्रमण</td><td><strong>17 बार</strong> (1000–1027 ई.)</td></tr>
+            <tr><td class="hl">उद्देश्य</td><td>धन लूटना — स्थायी राज्य नहीं</td></tr>
+            <tr><td class="hl">सोमनाथ</td><td>1025 ई. — सबसे प्रसिद्ध आक्रमण</td></tr>
+            <tr><td class="hl">उपाधि</td><td>गाजी</td></tr>
+            <tr><td class="hl">दरबारी</td><td>अलबेरूनी (किताब-उल-हिंद), फिरदौसी (शाहनामा)</td></tr>
+            <tr><td class="hl">मृत्यु</td><td>1030 ई.</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="card n">
+        <div class="ch"><span class="ci">⚔️</span><span class="ct">मुहम्मद गोरी (1173–1206)</span><span class="hot">IMPORTANT</span></div>
+        <div class="cb">
+          <table>
+            <tr><th>बिंदु</th><th>विवरण</th></tr>
+            <tr><td class="hl">उद्देश्य</td><td>स्थायी इस्लामी राज्य स्थापना</td></tr>
+            <tr><td class="hl">तराइन-I (1191)</td><td>पृथ्वीराज से <strong>पराजित</strong></td></tr>
+            <tr><td class="hl">तराइन-II (1192)</td><td>पृथ्वीराज को <strong>हराया</strong> — भारत में स्थायी</td></tr>
+            <tr><td class="hl">प्रतिनिधि</td><td>कुतुबुद्दीन ऐबक (गुलाम)</td></tr>
+            <tr><td class="hl">मृत्यु</td><td>1206 ई. — खोखर विद्रोहियों ने हत्या</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="trick">
+      <h4>🧠 आक्रमण Tricks</h4>
+      <div class="ti"><strong>गजनवी vs गोरी:</strong> गजनवी = <strong>लूटो और जाओ</strong> | गोरी = <strong>लूटो और रहो</strong> → यही परीक्षा में पूछते हैं!</div>
+      <div class="ti"><strong>क्रम याद करें:</strong> <strong>712 → 1025 → 1192 → 1206</strong> → अरब → गजनवी → गोरी → दिल्ली सल्तनत</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     PILLAR 3 — DELHI SULTANATE
+═══════════════════════════════════════════════ -->
+<div class="sec" id="s2">
+  <div class="ph">
+    <div class="pnum">PILLAR 03</div>
+    <div class="ptitle">दिल्ली सल्तनत (1206 – 1526 ई.)</div>
+    <div class="psub">CGVyapam में सर्वाधिक प्रश्न — 5 वंश, नीतियाँ, तैमूर आक्रमण</div>
+  </div>
+  <div class="grid">
+    <div class="imp">
+      <ul>
+        <li>स्थापना <strong>1206</strong> — कुतुबुद्दीन ऐबक | अंत <strong>1526</strong> — पानीपत प्रथम</li>
+        <li>5 वंश: <strong>गुलाम → खिलजी → तुगलक → सैय्यद → लोदी</strong></li>
+        <li>रज़िया सुल्तान — <strong>एकमात्र महिला सुल्तान</strong> (1236–1240)</li>
+        <li>अलाउद्दीन खिलजी — <strong>बाजार नियंत्रण + 22 मंगोल आक्रमण रोके + 50% भू-राजस्व</strong></li>
+        <li><strong>तैमूर का आक्रमण (1398)</strong> — दिल्ली लूटी — सैय्यद वंश की स्थापना का कारण</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="ch"><span class="ci">🏰</span><span class="ct">पाँचों वंश — सम्पूर्ण तालिका</span><span class="hot">TOP ASKED</span></div>
+      <div class="cb">
+        <table>
+          <tr><th>वंश</th><th>काल</th><th>संस्थापक</th><th>मुख्य शासक व विशेषता</th></tr>
+          <tr><td><span class="dtag ds">गुलाम वंश</span></td><td>1206–1290</td><td class="hl">कुतुबुद्दीन ऐबक</td><td>इल्तुतमिश (टंका+इक्ता), रज़िया (महिला), बलबन (रक्त-लौह नीति)</td></tr>
+          <tr><td><span class="dtag dk">खिलजी वंश</span></td><td>1290–1320</td><td class="hl">जलालुद्दीन खिलजी</td><td>अलाउद्दीन — बाजार नियंत्रण, दक्षिण विजय, 50% कर, मंगोल रोके</td></tr>
+          <tr><td><span class="dtag dtg">तुगलक वंश</span></td><td>1320–1414</td><td class="hl">गियासुद्दीन तुगलक</td><td>मो. बिन तुगलक (3 विफल), फिरोज (नहरें), तैमूर आक्रमण (1398)</td></tr>
+          <tr><td><span class="dtag dl">सैय्यद वंश</span></td><td>1414–1451</td><td class="hl">खिज्र खान</td><td>तैमूर के आक्रमण के बाद कमजोर शासन</td></tr>
+          <tr><td><span class="dtag dl">लोदी वंश</span></td><td>1451–1526</td><td class="hl">बहलोल लोदी</td><td>इब्राहिम लोदी — पानीपत-I में बाबर से पराजित → सल्तनत समाप्त</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- TAIMUR — NEW ADDITION -->
+    <div class="card r">
+      <div class="ch"><span class="ci">🔥</span><span class="ct">तैमूर का आक्रमण (1398 ई.) — पहले छूटा था</span><span class="ntag">🆕 ADDED</span></div>
+      <div class="cb">
+        <div class="chips">
+          <div class="chip r"><div class="cnum">1</div><div class="ctxt"><strong>कब:</strong> 1398 ई. — फिरोज तुगलक की मृत्यु के बाद कमजोर तुगलक काल में</div></div>
+          <div class="chip r"><div class="cnum">2</div><div class="ctxt"><strong>कहाँ से:</strong> समरकंद (मध्य एशिया) — तैमूरलंग (लंगड़ा तैमूर)</div></div>
+          <div class="chip r"><div class="cnum">3</div><div class="ctxt"><strong>दिल्ली लूटी</strong> — हत्याकांड किया, अपार धन ले गया</div></div>
+          <div class="chip r"><div class="cnum">4</div><div class="ctxt"><strong>परिणाम</strong> — तुगलक वंश और कमजोर → सैय्यद वंश की नींव (खिज्र खान = तैमूर का प्रतिनिधि)</div></div>
+          <div class="chip r"><div class="cnum">5</div><div class="ctxt"><strong>याद करें:</strong> तैमूर 1398 → नादिर शाह 1739 → अब्दाली 1761 — तीनों ने दिल्ली लूटी!</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="two">
+      <div class="card r">
+        <div class="ch"><span class="ci">⛓️</span><span class="ct">गुलाम वंश — Key Facts</span><span class="hot">MUST READ</span></div>
+        <div class="cb">
+          <div class="chips" style="grid-template-columns:1fr;">
+            <div class="chip r"><div class="cnum">1</div><div class="ctxt"><strong>कुतुब मीनार</strong> — ऐबक ने शुरू, इल्तुतमिश ने पूर्ण | 72.5 मी. | यूनेस्को</div></div>
+            <div class="chip r"><div class="cnum">2</div><div class="ctxt"><strong>रज़िया सुल्तान (1236–40)</strong> — दिल्ली सल्तनत की एकमात्र महिला शासक</div></div>
+            <div class="chip r"><div class="cnum">3</div><div class="ctxt"><strong>चाँदी का टंका + जीतल (तांबा)</strong> — इल्तुतमिश ने शुरू किए</div></div>
+            <div class="chip r"><div class="cnum">4</div><div class="ctxt"><strong>इक्ता प्रणाली</strong> — इल्तुतमिश | सैनिकों को वेतन की जगह भूमि का राजस्व</div></div>
+            <div class="chip r"><div class="cnum">5</div><div class="ctxt"><strong>बलबन</strong> — "रक्त और लौह" | सिजदा+पाबोस (दंडवत प्रणाम) अनिवार्य</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="card n">
+        <div class="ch"><span class="ci">⚔️</span><span class="ct">अलाउद्दीन खिलजी — नीतियाँ</span><span class="hot">VERY HOT</span></div>
+        <div class="cb">
+          <table>
+            <tr><th>नीति</th><th>विवरण</th></tr>
+            <tr><td class="hl">बाजार नियंत्रण</td><td>4 बाजार | शाहना-ए-मंडी अधिकारी</td></tr>
+            <tr><td class="hl">दक्षिण विजय</td><td>मलिक काफूर सेनापति | देवगिरि, वारंगल, मदुरई</td></tr>
+            <tr><td class="hl">भू-राजस्व</td><td>उपज का 50% — सबसे कठोर</td></tr>
+            <tr><td class="hl">मंगोल</td><td>22 बार आए — सभी रोके</td></tr>
+            <tr><td class="hl">उपाधि</td><td>सिकंदर-ए-सानी (दूसरा सिकंदर)</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="card t">
+      <div class="ch"><span class="ci">🏛️</span><span class="ct">तुगलक वंश — मो. बिन तुगलक के 3 विफल प्रयोग + शेरशाह</span><span class="hot">EXAM SPECIAL</span></div>
+      <div class="cb">
+        <div class="chips">
+          <div class="chip t"><div class="cnum">1</div><div class="ctxt"><strong>राजधानी (1327)</strong> — दिल्ली → दौलताबाद | कष्ट हुआ → वापस लाया</div></div>
+          <div class="chip t"><div class="cnum">2</div><div class="ctxt"><strong>सांकेतिक मुद्रा (1330)</strong> — तांबे के सिक्के | नकली बने → बंद किया</div></div>
+          <div class="chip t"><div class="cnum">3</div><div class="ctxt"><strong>दोआब कर वृद्धि</strong> — अकाल + किसान विद्रोह → फेल</div></div>
+          <div class="chip t"><div class="cnum">★</div><div class="ctxt"><strong>इब्न बतूता</strong> (मोरक्को) — मो. बिन तुगलक दरबार | "रिहला" ग्रंथ</div></div>
+        </div>
+        <div class="sbadge" style="margin-top:12px;">शेरशाह सूरी (1540–1545)</div>
+        <table>
+          <tr><th>उपलब्धि</th><th>विवरण</th></tr>
+          <tr><td class="hl">ग्रांड ट्रंक रोड</td><td>पेशावर → कोलकाता | आधुनिक NH-44 का आधार</td></tr>
+          <tr><td class="hl">रुपया (चाँदी)</td><td>आधुनिक रुपये का जनक | 64 दाम = 1 रुपया</td></tr>
+          <tr><td class="hl">डाक प्रणाली</td><td>1700 सराय | हर 2 कोस पर</td></tr>
+          <tr><td class="hl">भू-राजस्व</td><td>कबूलियत + पट्टा प्रणाली</td></tr>
+          <tr><td class="hl">मृत्यु</td><td>1545 — कालिंजर में बारूद विस्फोट</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="trick">
+      <h4>🧠 दिल्ली सल्तनत Tricks</h4>
+      <div class="ti"><strong>5 वंश:</strong> <strong>"Ghar Ka Tala Safai Lo"</strong> → गुलाम · खिलजी · तुगलक · सैयद · लोदी 🔑</div>
+      <div class="ti"><strong>तुगलक के 3 फेल:</strong> <strong>R·S·D</strong> → राजधानी + सिक्का + दोआब → "राजा सिक्का दो — तीनों फेल!"</div>
+      <div class="ti"><strong>तैमूर = 1398</strong> → "14वीं सदी के अंत में आया" → तुगलक कमजोर → सैय्यद स्थापना</div>
+      <div class="ti"><strong>शेरशाह = रुपया + सड़क</strong> → "शेरशाह ने रुपया बनाया और रोड पर रखा" 🦁</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     PILLAR 4 — MUGHAL EMPIRE
+═══════════════════════════════════════════════ -->
+<div class="sec" id="s3">
+  <div class="ph">
+    <div class="pnum">PILLAR 04</div>
+    <div class="ptitle">मुगल साम्राज्य (1526 – 1658 ई.) — बाबर से शाहजहाँ तक</div>
+    <div class="psub">CGVyapam में 3–5 प्रश्न | औरंगजेब अगले Pillar में विस्तार से</div>
+  </div>
+  <div class="grid">
+    <div class="imp">
+      <ul>
+        <li><strong>1526</strong> — पानीपत प्रथम → बाबर ने इब्राहिम लोदी को हराया → मुगल वंश</li>
+        <li>बाबर ने <strong>तोपखाने (तुलगमा रणनीति)</strong> का भारत में पहला प्रयोग किया</li>
+        <li>अकबर — <strong>मनसबदारी + दहसाला बंदोबस्त + जजिया समाप्त</strong></li>
+        <li>शाहजहाँ — <strong>स्थापत्य का स्वर्णकाल</strong> — ताजमहल, लाल किला, जामा मस्जिद</li>
+        <li>जहाँगीर — <strong>न्याय की जंजीर</strong> | चित्रकला का स्वर्णकाल</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="ch"><span class="ci">👑</span><span class="ct">6 महान मुगल सम्राट</span><span class="hot">TOP ASKED</span></div>
+      <div class="cb">
+        <table>
+          <tr><th>सम्राट</th><th>काल</th><th>उपनाम / महत्वपूर्ण कार्य</th></tr>
+          <tr><td class="hl">बाबर</td><td>1526–30</td><td>मुगल संस्थापक | तुज़क-ए-बाबरी | तोपखाना | पानीपत-I, खानवा, घाघरा</td></tr>
+          <tr><td class="hl">हुमायूँ</td><td>1530–56</td><td>शेरशाह से पराजित (1540) | 15 वर्ष निर्वासन | हुमायूँनामा (गुलबदन बेगम)</td></tr>
+          <tr><td class="hl">अकबर</td><td>1556–1605</td><td>महान | मनसबदारी | दीन-ए-इलाही (1582) | फतेहपुर सीकरी | जजिया समाप्त (1564)</td></tr>
+          <tr><td class="hl">जहाँगीर</td><td>1605–27</td><td>न्याय की जंजीर | तुज़क-ए-जहाँगीरी | चित्रकला स्वर्णकाल | नूरजहाँ का प्रभाव</td></tr>
+          <tr><td class="hl">शाहजहाँ</td><td>1628–58</td><td>स्थापत्य स्वर्णकाल | ताजमहल | लाल किला | जामा मस्जिद | मयूर सिंहासन</td></tr>
+          <tr><td class="hl">औरंगजेब</td><td>1658–1707</td><td>जिंदा पीर | जजिया पुनः लागू (1679) | अगले Pillar में विस्तार</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="two">
+      <div class="card r">
+        <div class="ch"><span class="ci">⚔️</span><span class="ct">मुगल काल के प्रमुख युद्ध</span><span class="hot">TOP MCQ</span></div>
+        <div class="cb">
+          <table>
+            <tr><th>युद्ध</th><th>वर्ष</th><th>परिणाम</th></tr>
+            <tr><td class="hl">पानीपत प्रथम</td><td>1526</td><td>बाबर → मुगल स्थापना</td></tr>
+            <tr><td class="hl">खानवा</td><td>1527</td><td>बाबर vs राणा साँगा → बाबर जीता</td></tr>
+            <tr><td class="hl">घाघरा</td><td>1529</td><td>बाबर vs अफगान → बाबर जीता</td></tr>
+            <tr><td class="hl">चौसा</td><td>1539</td><td>शेरशाह vs हुमायूँ → हुमायूँ पराजित</td></tr>
+            <tr><td class="hl">कन्नौज</td><td>1540</td><td>शेरशाह vs हुमायूँ → हुमायूँ निर्वासित</td></tr>
+            <tr><td class="hl">पानीपत द्वितीय</td><td>1556</td><td>अकबर vs हेमू → अकबर जीता</td></tr>
+            <tr><td class="hl">हल्दीघाटी</td><td>1576</td><td>अकबर vs राणा प्रताप → अनिर्णायक</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="card n">
+        <div class="ch"><span class="ci">⚖️</span><span class="ct">अकबर की प्रमुख नीतियाँ</span><span class="hot">MUST READ</span></div>
+        <div class="cb">
+          <div class="chips" style="grid-template-columns:1fr;">
+            <div class="chip n"><div class="cnum">1</div><div class="ctxt"><strong>मनसबदारी</strong> — 10 से 10,000 रैंक | जात (पद) + सवार (घुड़सवार)</div></div>
+            <div class="chip n"><div class="cnum">2</div><div class="ctxt"><strong>दहसाला (1580)</strong> — टोडरमल | 10 वर्षों की औसत उपज पर कर</div></div>
+            <div class="chip n"><div class="cnum">3</div><div class="ctxt"><strong>जजिया समाप्त (1564)</strong> — हिंदुओं पर से कर हटाया</div></div>
+            <div class="chip n"><div class="cnum">4</div><div class="ctxt"><strong>दीन-ए-इलाही (1582)</strong> — नया धर्म | बीरबल एकमात्र हिंदू अनुयायी</div></div>
+            <div class="chip n"><div class="cnum">5</div><div class="ctxt"><strong>इबादतखाना (1575)</strong> — धार्मिक चर्चा केंद्र | फतेहपुर सीकरी</div></div>
+            <div class="chip n"><div class="cnum">6</div><div class="ctxt"><strong>सुलह-ए-कुल</strong> — "सबके साथ शांति" — अकबर की सहिष्णुता नीति का सिद्धांत</div></div>
+            <div class="chip n"><div class="cnum">7</div><div class="ctxt"><strong>नवरत्न</strong> — अबुल फजल, बीरबल, तानसेन, टोडरमल, मानसिंह, रहीम, फैजी...</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="trick">
+      <h4>🧠 मुगल Tricks</h4>
+      <div class="ti"><strong>6 मुगल क्रम:</strong> <strong>B·H·A·J·S·A</strong> → <strong>"Bade Heroes Aaye Jab Sone Aao"</strong> 🏆</div>
+      <div class="ti"><strong>3 पानीपत:</strong> 1526 (बाबर जीता) → 1556 (अकबर जीता) → 1761 (मराठा हारे) — तीनों अलग-अलग!</div>
+      <div class="ti"><strong>अकबर की 3 मुख्य नीतियाँ:</strong> <strong>म·द·ज</strong> → मनसबदारी + दहसाला + जजिया समाप्त</div>
+      <div class="ti"><strong>सुलह-ए-कुल</strong> = सबके साथ शांति = अकबर की धार्मिक सहिष्णुता का मूल सिद्धांत — परीक्षा में पूछा जाता है!</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     PILLAR 5 — AURANGZEB (EXPANDED)
+═══════════════════════════════════════════════ -->
+<div class="sec" id="s4">
+  <div class="ph">
+    <div class="pnum">PILLAR 05 · 🆕 विस्तारित</div>
+    <div class="ptitle">औरंगजेब (1658–1707) — नीतियाँ और मुगल पतन का बीज</div>
+    <div class="psub">पहले सिर्फ mention था — अब पूरा विस्तार | CGVyapam में ज़रूर पूछा जाता है</div>
+  </div>
+  <div class="grid">
+
+    <div class="imp">
+      <ul>
+        <li>उपाधि — <strong>"जिंदा पीर"</strong> (जीवित संत) — सादा जीवन जीता था</li>
+        <li>जजिया कर <strong>1679</strong> में पुनः लागू किया — हिंदुओं में भारी असंतोष</li>
+        <li>औरंगजेब के काल में <strong>मुगल साम्राज्य सबसे बड़ा</strong> था — पर पतन भी इसी से शुरू हुआ</li>
+        <li><strong>शिवाजी, राजपूत, जाट, सिख</strong> — सभी ने औरंगजेब के विरुद्ध विद्रोह किया</li>
+        <li>औरंगजेब की मृत्यु <strong>1707</strong> — मुगल पतन की औपचारिक शुरुआत</li>
+      </ul>
+    </div>
+
+    <div class="card r">
+      <div class="ch"><span class="ci">📜</span><span class="ct">औरंगजेब की धार्मिक नीतियाँ</span><span class="hot">TOP ASKED</span></div>
+      <div class="cb">
+        <table>
+          <tr><th>नीति / कदम</th><th>वर्ष</th><th>परिणाम / प्रभाव</th></tr>
+          <tr><td class="hl">जजिया कर पुनः लागू</td><td>1679</td><td>हिंदुओं में भारी असंतोष — विद्रोह</td></tr>
+          <tr><td class="hl">मंदिर ध्वंस</td><td>—</td><td>काशी विश्वनाथ, मथुरा केशवदेव मंदिर तोड़े</td></tr>
+          <tr><td class="hl">दरबार में संगीत बंद</td><td>—</td><td>मुगल चित्रकला और संस्कृति का पतन</td></tr>
+          <tr><td class="hl">झरोखा दर्शन बंद</td><td>—</td><td>जनता से दूरी बढ़ी</td></tr>
+          <tr><td class="hl">शराब प्रतिबंध</td><td>—</td><td>कट्टर इस्लामी नीति</td></tr>
+          <tr><td class="hl">दीन-ए-इलाही बंद</td><td>—</td><td>अकबर की सहिष्णुता नीति का अंत</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="two">
+      <div class="card n">
+        <div class="ch"><span class="ci">⚔️</span><span class="ct">औरंगजेब के विरुद्ध प्रमुख विद्रोह</span><span class="hot">ASKED</span></div>
+        <div class="cb">
+          <table>
+            <tr><th>विद्रोह</th><th>नेता</th><th>कारण</th></tr>
+            <tr><td class="hl">मराठा विद्रोह</td><td>शिवाजी → संभाजी</td><td>स्वतंत्रता + हिंदू धर्म रक्षा</td></tr>
+            <tr><td class="hl">राजपूत विद्रोह</td><td>मेवाड़, मारवाड़</td><td>जजिया + मंदिर ध्वंस</td></tr>
+            <tr><td class="hl">जाट विद्रोह</td><td>गोकुल, राजाराम</td><td>आर्थिक शोषण</td></tr>
+            <tr><td class="hl">सतनामी विद्रोह</td><td>—</td><td>धार्मिक उत्पीड़न</td></tr>
+            <tr><td class="hl">सिख विद्रोह</td><td>गुरु तेग बहादुर (1675 शहीद)</td><td>धर्म रक्षा | गुरु गोविंद सिंह</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="card t">
+        <div class="ch"><span class="ci">📋</span><span class="ct">औरंगजेब — महत्वपूर्ण तथ्य</span><span class="hot">ASKED</span></div>
+        <div class="cb">
+          <div class="chips" style="grid-template-columns:1fr;">
+            <div class="chip t"><div class="cnum">1</div><div class="ctxt"><strong>उपाधि</strong> — "जिंदा पीर" | "आलमगीर" (विश्व विजेता)</div></div>
+            <div class="chip t"><div class="cnum">2</div><div class="ctxt"><strong>दक्षिण अभियान (1681–1707)</strong> — बीजापुर, गोलकुंडा जीते पर मराठों से उलझे रहे</div></div>
+            <div class="chip t"><div class="cnum">3</div><div class="ctxt"><strong>फतवा-ए-आलमगीरी</strong> — इस्लामी कानून संहिता बनवाई</div></div>
+            <div class="chip t"><div class="cnum">4</div><div class="ctxt"><strong>शाहजहाँ को कैद</strong> — आगरा के किले में | 8 वर्ष कैद | 1666 मृत्यु</div></div>
+            <div class="chip t"><div class="cnum">5</div><div class="ctxt"><strong>मृत्यु 1707</strong> — औरंगाबाद (महाराष्ट्र) | मुगल पतन शुरू</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="trick">
+      <h4>🧠 औरंगजेब Tricks</h4>
+      <div class="ti"><strong>औरंगजेब = अकबर का उलटा:</strong> अकबर ने जजिया हटाया → औरंगजेब ने लगाया | अकबर सहिष्णु → औरंगजेब कट्टर</div>
+      <div class="ti"><strong>"जिंदा पीर"</strong> — खुद टोपी बेचता था और कुरान लिखकर जीवन चलाता था → सादा जीवन पर परीक्षा में पूछते हैं</div>
+      <div class="ti"><strong>औरंगजेब के 3 बड़े विद्रोह:</strong> <strong>मराठा + राजपूत + सिख</strong> → तीनों ने मिलकर मुगल साम्राज्य को खोखला किया</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     PILLAR 6 — MUGHAL DECLINE + END
+═══════════════════════════════════════════════ -->
+<div class="sec" id="s5">
+  <div class="ph">
+    <div class="pnum">PILLAR 06</div>
+    <div class="ptitle">मुगल पतन (1707–1857) — मध्यकाल का अंत</div>
+    <div class="psub">औरंगजेब की मृत्यु से 1857 तक — Medieval India समाप्त</div>
+  </div>
+  <div class="grid">
+    <div class="alert">
+      <strong>📌 मध्यकाल का अंत कब?</strong>
+      CGVyapam में यह पूछा जाता है — <strong>1857 के प्रथम स्वतंत्रता संग्राम</strong> और उसके बाद <strong>1858 में ब्रिटिश राज</strong> की स्थापना के साथ मध्यकाल समाप्त माना जाता है।
+    </div>
+
+    <div class="ebox">
+      <h4>💀 मुगल पतन के 6 प्रमुख कारण</h4>
+      <div class="ei"><strong>1. औरंगजेब की कट्टरता (1658–1707)</strong> — जजिया, मंदिर ध्वंस → हिंदू-राजपूत-मराठा-सिख सभी विरुद्ध</div>
+      <div class="ei"><strong>2. कमजोर उत्तराधिकारी</strong> — औरंगजेब के बाद 12 कमजोर बादशाह | उत्तराधिकार के लिए परस्पर हत्याएँ</div>
+      <div class="ei"><strong>3. तैमूर (1398) → नादिर शाह (1739) → अब्दाली (1761)</strong> — बार-बार बाहरी आक्रमणों से खजाना और प्रतिष्ठा दोनों गए</div>
+      <div class="ei"><strong>4. मराठा शक्ति का उदय</strong> — शिवाजी → पेशवाओं ने उत्तर भारत तक विस्तार किया</div>
+      <div class="ei"><strong>5. ईस्ट इंडिया कंपनी</strong> — प्लासी (1757) + बक्सर (1764) → अंग्रेजी प्रभुत्व स्थापित</div>
+      <div class="ei"><strong>6. आर्थिक पतन</strong> — खजाना खाली, सेना बिखरी, सूबेदार स्वतंत्र हुए</div>
+    </div>
+
+    <div class="card r">
+      <div class="ch"><span class="ci">📅</span><span class="ct">मध्यकाल के अंत की सम्पूर्ण Timeline</span><span class="hot">TOP ASKED</span></div>
+      <div class="cb">
+        <div class="tl">
+          <div class="tli"><div class="tly">1707 ई.</div><div class="tle"><strong>औरंगजेब की मृत्यु</strong> — मुगल पतन की औपचारिक शुरुआत</div></div>
+          <div class="tli"><div class="tly">1739 ई.</div><div class="tle"><strong>नादिर शाह</strong> का आक्रमण — दिल्ली लूटी | मयूर सिंहासन ईरान गया | मुहम्मद शाह "रंगीला" का काल</div></div>
+          <div class="tli"><div class="tly">1757 ई.</div><div class="tle"><strong>प्लासी का युद्ध</strong> — क्लाइव vs सिराजुद्दौला → अंग्रेजी प्रभुत्व शुरू | मध्यकाल के अंत का संकेत</div></div>
+          <div class="tli"><div class="tly">1761 ई.</div><div class="tle"><strong>पानीपत तृतीय</strong> — अब्दाली vs मराठा → मराठा शक्ति कमजोर</div></div>
+          <div class="tli"><div class="tly">1764 ई.</div><div class="tle"><strong>बक्सर का युद्ध</strong> — अंग्रेज vs मुगल+नवाब → अंग्रेजों की निर्णायक विजय</div></div>
+          <div class="tli"><div class="tly">1857 ई.</div><div class="tle"><strong>प्रथम स्वतंत्रता संग्राम</strong> — बहादुर शाह जफर नेतृत्व → विफल → रंगून निर्वासन</div></div>
+          <div class="tli"><div class="tly">1858 ई.</div><div class="tle"><strong>ब्रिटिश राज स्थापना</strong> — भारत ब्रिटिश क्राउन के अधीन → <strong>मध्यकाल का औपचारिक अंत</strong></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="two">
+      <div class="card t">
+        <div class="ch"><span class="ci">👑</span><span class="ct">औरंगजेब के बाद के बादशाह</span></div>
+        <div class="cb">
+          <table>
+            <tr><th>बादशाह</th><th>काल</th><th>घटना</th></tr>
+            <tr><td class="hl">मुहम्मद शाह</td><td>1719–48</td><td>"रंगीला" | नादिर शाह आक्रमण (1739)</td></tr>
+            <tr><td class="hl">शाह आलम II</td><td>1759–1806</td><td>अंग्रेजों का पेंशनभोगी बना</td></tr>
+            <tr><td class="hl">अकबर II</td><td>1806–1837</td><td>नाम के बादशाह</td></tr>
+            <tr><td class="hl">बहादुर शाह जफर</td><td>1837–1857</td><td><strong>अंतिम मुगल</strong> | 1857 क्रांति | रंगून | 1862 मृत्यु</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="card n">
+        <div class="ch"><span class="ci">🗺️</span><span class="ct">मुगलों के बाद के स्वतंत्र राज्य</span></div>
+        <div class="cb">
+          <table>
+            <tr><th>राज्य</th><th>संस्थापक</th><th>वर्ष</th></tr>
+            <tr><td class="hl">हैदराबाद</td><td>निजाम-उल-मुल्क</td><td>1724</td></tr>
+            <tr><td class="hl">अवध</td><td>सआदत खान</td><td>1722</td></tr>
+            <tr><td class="hl">बंगाल (नवाब)</td><td>मुर्शिद कुली खान</td><td>1717</td></tr>
+            <tr><td class="hl">मैसूर</td><td>हैदर अली</td><td>1761</td></tr>
+            <tr><td class="hl">पंजाब (सिख)</td><td>रणजीत सिंह</td><td>1799</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="trick">
+      <h4>🧠 मुगल पतन Tricks</h4>
+      <div class="ti"><strong>पतन के 3 मुख्य कारण:</strong> <strong>"औ·ना·अं"</strong> → औरंगजेब की कट्टरता + नादिर शाह की लूट + अंग्रेजों का विस्तार</div>
+      <div class="ti"><strong>3 "दिल्ली लुटेरे":</strong> तैमूर (1398) → नादिर शाह (1739) → अब्दाली (1761) → तीनों ने बाहर से आकर लूटा</div>
+      <div class="ti"><strong>अंतिम मुगल = बहादुर शाह जफर → 1857 → रंगून → 1862 मृत्यु → मध्यकाल समाप्त</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     PILLAR 7 — MARATHA
+═══════════════════════════════════════════════ -->
+<div class="sec" id="s6">
+  <div class="ph">
+    <div class="pnum">PILLAR 07</div>
+    <div class="ptitle">मराठा साम्राज्य (1674 – 1818 ई.)</div>
+    <div class="psub">शिवाजी से पेशवाओं तक — 1818 में अंग्रेजों से अंतिम पराजय</div>
+  </div>
+  <div class="grid">
+    <div class="imp">
+      <ul>
+        <li>शिवाजी का राज्याभिषेक <strong>1674</strong> — रायगढ़ — गागाभट्ट ने किया</li>
+        <li><strong>चौथ (25%) + सरदेशमुखी (10%)</strong> — मराठा कर व्यवस्था — परीक्षा में बार-बार</li>
+        <li>पानीपत-III <strong>1761</strong> — मराठा vs अहमद शाह अब्दाली — मराठा हारे</li>
+        <li>तृतीय आंग्ल-मराठा युद्ध <strong>1817–18</strong> → बाजीराव द्वितीय ने आत्मसमर्पण किया → साम्राज्य का अंत</li>
+      </ul>
+    </div>
+    <div class="two">
+      <div class="card r">
+        <div class="ch"><span class="ci">🦁</span><span class="ct">शिवाजी — सम्पूर्ण तथ्य</span><span class="hot">ASKED</span></div>
+        <div class="cb">
+          <table>
+            <tr><th>बिंदु</th><th>विवरण</th></tr>
+            <tr><td class="hl">जन्म</td><td>1627 | शिवनेरी दुर्ग | माता — जीजाबाई</td></tr>
+            <tr><td class="hl">गुरु</td><td>समर्थ रामदास | पिता — शाहजी भोंसले</td></tr>
+            <tr><td class="hl">राज्याभिषेक</td><td>1674 | रायगढ़ | गागाभट्ट</td></tr>
+            <tr><td class="hl">अफजल खान वध</td><td>1659 | बाघनखा से | प्रतापगढ़</td></tr>
+            <tr><td class="hl">आगरा से भागे</td><td>1666 | औरंगजेब की कैद से</td></tr>
+            <tr><td class="hl">नौसेना</td><td>भारत की पहली संगठित नौसेना</td></tr>
+            <tr><td class="hl">कर</td><td>चौथ (25%) + सरदेशमुखी (10%)</td></tr>
+            <tr><td class="hl">मृत्यु</td><td>1680 | रायगढ़</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="card t">
+        <div class="ch"><span class="ci">📜</span><span class="ct">पेशवा काल (1713–1818)</span><span class="hot">ASKED</span></div>
+        <div class="cb">
+          <table>
+            <tr><th>पेशवा</th><th>काल</th><th>विशेषता</th></tr>
+            <tr><td class="hl">बालाजी विश्वनाथ</td><td>1713–20</td><td>प्रथम पेशवा | मराठा पुनर्निर्माण</td></tr>
+            <tr><td class="hl">बाजीराव प्रथम</td><td>1720–40</td><td>सर्वश्रेष्ठ | दिल्ली तक विस्तार</td></tr>
+            <tr><td class="hl">बालाजी बाजीराव</td><td>1740–61</td><td>नाना साहब | पानीपत-III पराजय</td></tr>
+            <tr><td class="hl">माधव राव</td><td>1761–72</td><td>मराठा पुनर्स्थापना</td></tr>
+            <tr><td class="hl">बाजीराव द्वितीय</td><td>1796–1818</td><td>अंतिम पेशवा | 1818 में आत्मसमर्पण</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="ebox">
+      <h4>🏁 मराठा साम्राज्य का अंत (1818)</h4>
+      <div class="ei"><strong>पानीपत-III (1761)</strong> — अब्दाली से पराजय के बाद मराठा शक्ति कमजोर पड़ी।</div>
+      <div class="ei"><strong>प्रथम आंग्ल-मराठा (1775–82)</strong> — सालबाई संधि — अनिर्णायक।</div>
+      <div class="ei"><strong>द्वितीय आंग्ल-मराठा (1803–05)</strong> — अंग्रेजों ने दिल्ली और आगरा पर कब्जा किया।</div>
+      <div class="ei"><strong>तृतीय आंग्ल-मराठा (1817–18)</strong> — बाजीराव द्वितीय ने आत्मसमर्पण किया → <strong>मराठा साम्राज्य का औपचारिक अंत।</strong></div>
+    </div>
+    <div class="trick">
+      <h4>🧠 मराठा Tricks</h4>
+      <div class="ti"><strong>चौथ और सरदेशमुखी:</strong> चौथ = 1/4 = 25% | सरदेशमुखी = 1/10 = 10% → "चार में एक, दस में एक"</div>
+      <div class="ti"><strong>3 आंग्ल-मराठा युद्ध:</strong> 1775 → 1803 → 1817 → तीनों में धीरे-धीरे कमजोर पड़े, तीसरे में खत्म</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     PILLAR 8 — VIJAYANAGAR / BAHMANI
+═══════════════════════════════════════════════ -->
+<div class="sec" id="s7">
+  <div class="ph">
+    <div class="pnum">PILLAR 08</div>
+    <div class="ptitle">विजयनगर & बहमनी साम्राज्य</div>
+    <div class="psub">दक्षिण भारत — चोल के बाद उभरी दो प्रमुख शक्तियाँ</div>
+  </div>
+  <div class="grid">
+    <div class="imp">
+      <ul>
+        <li>विजयनगर — <strong>1336</strong> — हरिहर + बुक्का — राजधानी <strong>हम्पी</strong></li>
+        <li>कृष्णदेव राय — सर्वश्रेष्ठ | <strong>आमुक्तमाल्यदा</strong> (तेलुगु)</li>
+        <li>तालीकोटा युद्ध <strong>1565</strong> = "राक्षसी-तंगड़ी" — विजयनगर का पतन</li>
+        <li>बहमनी — <strong>1347</strong> — गुलबर्गा → बीदर | <strong>महमूद गवाँ</strong> प्रसिद्ध PM</li>
+        <li>बहमनी टूटकर <strong>5 सल्तनतें</strong> बनीं (1518)</li>
+      </ul>
+    </div>
+    <div class="two">
+      <div class="card s">
+        <div class="ch"><span class="ci">🏛️</span><span class="ct">विजयनगर साम्राज्य</span><span class="hot">ASKED</span></div>
+        <div class="cb">
+          <table>
+            <tr><th>बिंदु</th><th>विवरण</th></tr>
+            <tr><td class="hl">स्थापना</td><td>1336 | हरिहर + बुक्का राय</td></tr>
+            <tr><td class="hl">राजधानी</td><td>हम्पी (तुंगभद्रा, कर्नाटक)</td></tr>
+            <tr><td class="hl">4 वंश</td><td>संगम, सालुव, तुलुव, अरवीडु</td></tr>
+            <tr><td class="hl">महान शासक</td><td>कृष्णदेव राय (1509–1529)</td></tr>
+            <tr><td class="hl">रचना</td><td>आमुक्तमाल्यदा (तेलुगु)</td></tr>
+            <tr><td class="hl">विदेशी यात्री</td><td>निकोलो कोंटी, अब्दुर रज्जाक, डोमिंगो पाएस</td></tr>
+            <tr><td class="hl">पतन</td><td>तालीकोटा 1565 ("राक्षसी-तंगड़ी")</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="card m">
+        <div class="ch"><span class="ci">🕌</span><span class="ct">बहमनी → 5 सल्तनतें</span><span class="hot">ASKED</span></div>
+        <div class="cb">
+          <table>
+            <tr><th>बिंदु</th><th>विवरण</th></tr>
+            <tr><td class="hl">स्थापना</td><td>1347 | अलाउद्दीन हसन बहमन शाह</td></tr>
+            <tr><td class="hl">राजधानी</td><td>गुलबर्गा → बीदर (1424)</td></tr>
+            <tr><td class="hl">महान PM</td><td>महमूद गवाँ — प्रशासन+शिक्षा सुधार</td></tr>
+            <tr><td class="hl">पतन (1518)</td><td>5 राज्यों में विभाजन</td></tr>
+            <tr><td class="hl">5 राज्य</td><td>बीजापुर, गोलकुंडा, बीदर, बरार, अहमदनगर</td></tr>
+          </table>
+          <div class="chip m" style="margin-top:10px;"><div class="cnum">★</div><div class="ctxt"><strong>इन्हीं 5 सल्तनतों ने मिलकर तालीकोटा (1565) में विजयनगर को हराया</strong></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     PILLAR 9 — SUFI / BHAKTI / ART / FIRSTS
+═══════════════════════════════════════════════ -->
+<div class="sec" id="s8">
+  <div class="ph">
+    <div class="pnum">PILLAR 09</div>
+    <div class="ptitle">सूफी · भक्ति · कला · साहित्य · "पहली बार"</div>
+    <div class="psub">CGVyapam में Book-Author + Monuments + Firsts से 2–3 प्रश्न पक्के</div>
+  </div>
+  <div class="grid">
+
+    <div class="two">
+      <div class="card s">
+        <div class="ch"><span class="ci">🙏</span><span class="ct">भक्ति आंदोलन के संत</span><span class="hot">ASKED</span></div>
+        <div class="cb">
+          <table>
+            <tr><th>संत</th><th>क्षेत्र / रचना</th></tr>
+            <tr><td class="hl">रामानुजाचार्य</td><td>दक्षिण | विशिष्टाद्वैत | भक्ति आंदोलन के आदि प्रेरणा</td></tr>
+            <tr><td class="hl">रामानंद</td><td>उत्तर भारत | निर्गुण भक्ति प्रसार</td></tr>
+            <tr><td class="hl">कबीरदास</td><td>हिंदू-मुस्लिम एकता | बीजक</td></tr>
+            <tr><td class="hl">मीराबाई</td><td>राजस्थान | कृष्ण भक्ति</td></tr>
+            <tr><td class="hl">तुकाराम</td><td>महाराष्ट्र | वारकरी आंदोलन | अभंग</td></tr>
+            <tr><td class="hl">चैतन्य महाप्रभु</td><td>बंगाल | वैष्णव भक्ति | कीर्तन</td></tr>
+            <tr><td class="hl">गुरु नानक</td><td>पंजाब | 1469 | सिख धर्म संस्थापक</td></tr>
+            <tr><td class="hl">सूरदास</td><td>सूरसागर | ब्रज भाषा</td></tr>
+            <tr><td class="hl">तुलसीदास</td><td>रामचरितमानस | अवधी | अकबर काल</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="card m">
+        <div class="ch"><span class="ci">☪️</span><span class="ct">सूफी सिलसिले</span><span class="hot">ASKED</span></div>
+        <div class="cb">
+          <table>
+            <tr><th>सिलसिला</th><th>प्रमुख संत</th><th>स्थान</th></tr>
+            <tr><td class="hl">चिश्तिया</td><td>मुइनुद्दीन चिश्ती, निजामुद्दीन औलिया, बख्तियार काकी</td><td>अजमेर, दिल्ली</td></tr>
+            <tr><td class="hl">सुहरावर्दिया</td><td>बहाउद्दीन जकरिया</td><td>मुल्तान</td></tr>
+            <tr><td class="hl">कादिरिया</td><td>—</td><td>पंजाब</td></tr>
+            <tr><td class="hl">नक्शबंदिया</td><td>बाकी बिल्लाह</td><td>दिल्ली</td></tr>
+          </table>
+          <div class="chip" style="margin-top:10px;"><div class="cnum">★</div><div class="ctxt"><strong>चिश्तिया सबसे लोकप्रिय सिलसिला</strong> — दरगाह परंपरा इन्हीं से शुरू हुई</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card n">
+      <div class="ch"><span class="ci">📖</span><span class="ct">पुस्तक — लेखक (परीक्षा में सर्वाधिक पूछे जाते हैं)</span><span class="hot">TOP MCQ</span></div>
+      <div class="cb">
+        <table>
+          <tr><th>पुस्तक</th><th>लेखक</th><th>काल / भाषा</th></tr>
+          <tr><td class="hl">किताब-उल-हिंद</td><td>अलबेरूनी</td><td>गजनवी काल | अरबी</td></tr>
+          <tr><td class="hl">पृथ्वीराज रासो</td><td>चंदबरदाई</td><td>राजपूत काल | हिंदी</td></tr>
+          <tr><td class="hl">तारीख-ए-फिरोजशाही</td><td>जियाउद्दीन बरनी</td><td>तुगलक काल | फारसी</td></tr>
+          <tr><td class="hl">रिहला</td><td>इब्न बतूता</td><td>मो. बिन तुगलक काल | अरबी</td></tr>
+          <tr><td class="hl">तुज़क-ए-बाबरी (बाबरनामा)</td><td>बाबर (स्वयं)</td><td>तुर्की भाषा</td></tr>
+          <tr><td class="hl">हुमायूँनामा</td><td>गुलबदन बेगम (बहन)</td><td>हुमायूँ काल</td></tr>
+          <tr><td class="hl">आइन-ए-अकबरी</td><td>अबुल फजल</td><td>अकबर काल | फारसी</td></tr>
+          <tr><td class="hl">अकबरनामा</td><td>अबुल फजल</td><td>अकबर काल</td></tr>
+          <tr><td class="hl">तुज़क-ए-जहाँगीरी</td><td>जहाँगीर (स्वयं)</td><td>—</td></tr>
+          <tr><td class="hl">रामचरितमानस</td><td>तुलसीदास</td><td>अकबर काल | अवधी</td></tr>
+          <tr><td class="hl">सूरसागर</td><td>सूरदास</td><td>ब्रज भाषा</td></tr>
+          <tr><td class="hl">पद्मावत</td><td>मलिक मुहम्मद जायसी</td><td>शेरशाह काल | अवधी</td></tr>
+          <tr><td class="hl">आमुक्तमाल्यदा</td><td>कृष्णदेव राय</td><td>विजयनगर काल | तेलुगु</td></tr>
+          <tr><td class="hl">बीजक</td><td>कबीरदास</td><td>हिंदी/सधुक्कड़ी</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="two">
+      <div class="card">
+        <div class="ch"><span class="ci">🏛️</span><span class="ct">प्रमुख स्मारक — निर्माता</span><span class="hot">TOP ASKED</span></div>
+        <div class="cb">
+          <table>
+            <tr><th>स्मारक</th><th>निर्माता</th><th>विशेषता</th></tr>
+            <tr><td class="hl">कुतुब मीनार</td><td>ऐबक / इल्तुतमिश</td><td>72.5 मी. | यूनेस्को | दिल्ली</td></tr>
+            <tr><td class="hl">ताजमहल</td><td>शाहजहाँ</td><td>आगरा | 1631–1653</td></tr>
+            <tr><td class="hl">लाल किला</td><td>शाहजहाँ</td><td>दिल्ली | 1638–48</td></tr>
+            <tr><td class="hl">फतेहपुर सीकरी</td><td>अकबर</td><td>1571 | अकबर की राजधानी</td></tr>
+            <tr><td class="hl">बुलंद दरवाजा</td><td>अकबर</td><td>52 मी. | गुजरात विजय की याद में</td></tr>
+            <tr><td class="hl">हुमायूँ मकबरा</td><td>हाजी बेगम</td><td>दिल्ली | ताजमहल की प्रेरणा</td></tr>
+            <tr><td class="hl">गोल गुम्बज</td><td>मोहम्मद आदिल शाह</td><td>बीजापुर | दूसरा बड़ा गुम्बद</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="card r">
+        <div class="ch"><span class="ci">💰</span><span class="ct">सिक्के + संगीत</span></div>
+        <div class="cb">
+          <div class="sbadge">मुद्रा (Coins)</div>
+          <table style="margin-bottom:11px;">
+            <tr><th>सिक्का</th><th>शुरू किया</th></tr>
+            <tr><td class="hl">टंका (चाँदी) + जीतल (तांबा)</td><td>इल्तुतमिश</td></tr>
+            <tr><td class="hl">सांकेतिक मुद्रा (तांबा)</td><td>मो. बिन तुगलक</td></tr>
+            <tr><td class="hl">रुपया (चाँदी)</td><td>शेरशाह सूरी</td></tr>
+          </table>
+          <div class="sbadge">संगीत</div>
+          <table>
+            <tr><th>नाम</th><th>योगदान</th></tr>
+            <tr><td class="hl">अमीर खुसरो</td><td>सितार + तबला | कव्वाली | दिल्ली सल्तनत</td></tr>
+            <tr><td class="hl">तानसेन</td><td>अकबर के नवरत्न | मियाँ की मल्हार राग</td></tr>
+            <tr><td class="hl">बैजू बावरा</td><td>अकबर काल का महान गायक</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- FIRSTS BOX — NEW DEDICATED SECTION -->
+    <div class="fbox">
+      <h4>🥇 मध्यकाल के "पहली बार" — CGVyapam में सीधे पूछे जाते हैं</h4>
+      <div class="fi"><div class="fbadge">1st</div><div class="fi-txt"><strong>भारत में इस्लाम का प्रवेश</strong> — मुहम्मद बिन कासिम — <strong>712 ई.</strong> — सिंध विजय</div></div>
+      <div class="fi"><div class="fbadge">1st</div><div class="fi-txt"><strong>दिल्ली सल्तनत का पहला सुल्तान</strong> — कुतुबुद्दीन ऐबक — <strong>1206 ई.</strong></div></div>
+      <div class="fi"><div class="fbadge">1st</div><div class="fi-txt"><strong>दिल्ली की पहली और एकमात्र महिला शासक</strong> — रज़िया सुल्तान — <strong>1236 ई.</strong></div></div>
+      <div class="fi"><div class="fbadge">1st</div><div class="fi-txt"><strong>भारत में तोपखाने का पहला प्रयोग</strong> — बाबर — पानीपत प्रथम — <strong>1526 ई.</strong></div></div>
+      <div class="fi"><div class="fbadge">1st</div><div class="fi-txt"><strong>चाँदी का रुपया — पहला</strong> — शेरशाह सूरी — <strong>1540 के आसपास</strong></div></div>
+      <div class="fi"><div class="fbadge">1st</div><div class="fi-txt"><strong>भारत की पहली संगठित नौसेना</strong> — शिवाजी — <strong>1674 के आसपास</strong></div></div>
+      <div class="fi"><div class="fbadge">1st</div><div class="fi-txt"><strong>सिक्का — टंका का पहला प्रचलन</strong> — इल्तुतमिश — गुलाम वंश काल</div></div>
+      <div class="fi"><div class="fbadge">1st</div><div class="fi-txt"><strong>मुगल वंश का पहला सम्राट</strong> — बाबर — <strong>1526 ई.</strong> — पानीपत प्रथम के बाद</div></div>
+      <div class="fi"><div class="fbadge">1st</div><div class="fi-txt"><strong>दक्षिण विजय का पहला मुस्लिम सेनापति</strong> — मलिक काफूर — अलाउद्दीन खिलजी के काल में</div></div>
+      <div class="fi"><div class="fbadge">1st</div><div class="fi-txt"><strong>पहला मुगल जिसने आत्मकथा लिखी</strong> — बाबर (तुज़क-ए-बाबरी / बाबरनामा)</div></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     PILLAR 10 — MCQ
+═══════════════════════════════════════════════ -->
+<div class="sec" id="s9">
+  <div class="ph">
+    <div class="pnum">PILLAR 10</div>
+    <div class="ptitle">CGVyapam Style MCQ — 32 प्रश्न</div>
+    <div class="psub">चोल के बाद से मध्यकाल के अंत तक | Option click करें → तुरंत उत्तर</div>
+  </div>
+  <div class="grid">
+    <div class="scorebox" id="scorebox">
+      <div class="score-val" id="scoreval">0/32</div>
+      <div class="score-lbl">आपका स्कोर</div>
+    </div>
+    <div id="mcqbox"></div>
+  </div>
+</div>
+
+</main>
+<button class="stbtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+// NAV
+function go(i){
+  document.querySelectorAll('.sec').forEach((s,j)=>s.classList.toggle('on',i===j));
+  document.querySelectorAll('.nt').forEach((t,j)=>t.classList.toggle('on',i===j));
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+// PROGRESS
+window.addEventListener('scroll',()=>{
+  const h=document.documentElement;
+  document.getElementById('prog').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';
+});
+
+// MCQ DATA — 32 questions
+const Q=[
+  {q:"तराइन का प्रथम युद्ध (1191 ई.) में कौन विजयी हुआ?",o:["मुहम्मद गोरी","पृथ्वीराज चौहान","जयचंद","बाबर"],a:1,e:"तराइन-I (1191) में पृथ्वीराज चौहान ने मुहम्मद गोरी को पराजित किया। अगले वर्ष 1192 में तराइन-II में पृथ्वीराज स्वयं पराजित हुए।"},
+  {q:"महमूद गजनवी ने भारत पर कुल कितनी बार आक्रमण किए?",o:["12 बार","15 बार","17 बार","20 बार"],a:2,e:"महमूद गजनवी ने 1000–1027 ई. के बीच 17 बार आक्रमण किए। उद्देश्य केवल धन लूटना — स्थायी राज्य नहीं।"},
+  {q:"सोमनाथ मंदिर पर महमूद गजनवी का आक्रमण किस वर्ष हुआ?",o:["1001","1017","1025","1030"],a:2,e:"1025 ई. में गुजरात के सोमनाथ मंदिर पर महमूद गजनवी का सबसे प्रसिद्ध आक्रमण हुआ।"},
+  {q:"भारत में अरबों का पहला सफल आक्रमण किसने किया?",o:["महमूद गजनवी","मुहम्मद बिन कासिम","मुहम्मद गोरी","तैमूर"],a:1,e:"मुहम्मद बिन कासिम ने 712 ई. में सिंध पर विजय प्राप्त की — राजा दाहिर पराजित। भारत में इस्लाम का पहला प्रवेश।"},
+  {q:"दिल्ली सल्तनत की स्थापना किसने और कब की?",o:["इल्तुतमिश — 1210","कुतुबुद्दीन ऐबक — 1206","बलबन — 1265","जलालुद्दीन खिलजी — 1290"],a:1,e:"कुतुबुद्दीन ऐबक ने 1206 ई. में दिल्ली सल्तनत की स्थापना की। उपनाम 'लाखबख्श'।"},
+  {q:"दिल्ली सल्तनत की एकमात्र महिला शासक कौन थीं?",o:["नूरजहाँ","रज़िया सुल्तान","चाँद बीबी","जीजाबाई"],a:1,e:"रज़िया सुल्तान (1236–1240) दिल्ली सल्तनत की एकमात्र महिला शासक — इल्तुतमिश की पुत्री।"},
+  {q:"तैमूर का भारत पर आक्रमण किस वर्ष हुआ?",o:["1388","1392","1398","1402"],a:2,e:"तैमूर ने 1398 ई. में दिल्ली पर आक्रमण किया — तुगलक वंश के कमजोर काल में। दिल्ली लूटी, हत्याकांड हुआ। परिणामत: सैय्यद वंश की स्थापना हुई।"},
+  {q:"तैमूर के आक्रमण के बाद दिल्ली में कौन-सा वंश स्थापित हुआ?",o:["लोदी वंश","तुगलक वंश","सैय्यद वंश","खिलजी वंश"],a:2,e:"तैमूर के आक्रमण (1398) के बाद तुगलक वंश और कमजोर हुआ। 1414 में खिज्र खान (तैमूर का प्रतिनिधि) ने सैय्यद वंश की स्थापना की।"},
+  {q:"'इक्ता प्रणाली' किस सुल्तान ने प्रारम्भ की?",o:["कुतुबुद्दीन ऐबक","इल्तुतमिश","बलबन","अलाउद्दीन"],a:1,e:"इक्ता प्रणाली इल्तुतमिश ने शुरू की — सैनिकों को वेतन की जगह भूमि का राजस्व दिया जाता था।"},
+  {q:"अलाउद्दीन खिलजी ने भू-राजस्व के रूप में कितना प्रतिशत कर लिया?",o:["25%","33%","50%","75%"],a:2,e:"अलाउद्दीन खिलजी ने उपज का 50% राजस्व के रूप में लिया — दिल्ली सल्तनत का सबसे कठोर कर।"},
+  {q:"मो. बिन तुगलक ने राजधानी दिल्ली से कहाँ स्थानांतरित की?",o:["आगरा","दौलताबाद (देवगिरि)","बीजापुर","अजमेर"],a:1,e:"मोहम्मद बिन तुगलक ने 1327 ई. में राजधानी दिल्ली से दौलताबाद स्थानांतरित की। यह प्रयोग विफल रहा।"},
+  {q:"शेरशाह सूरी ने कौन-सा सिक्का चलाया?",o:["टंका","जीतल","रुपया","दाम"],a:2,e:"शेरशाह सूरी ने चाँदी का रुपया चलाया — आधुनिक भारतीय रुपये का आधार। 64 दाम = 1 रुपया।"},
+  {q:"पानीपत का प्रथम युद्ध (1526) किनके बीच हुआ?",o:["बाबर vs राणा साँगा","बाबर vs इब्राहिम लोदी","अकबर vs हेमू","हुमायूँ vs शेरशाह"],a:1,e:"पानीपत प्रथम (1526) — बाबर vs इब्राहिम लोदी। बाबर ने तोपखाने का प्रयोग किया → मुगल वंश।"},
+  {q:"अकबर ने जजिया कर कब समाप्त किया?",o:["1556","1560","1564","1582"],a:2,e:"अकबर ने 1564 ई. में हिंदुओं पर लगा जजिया कर समाप्त किया — सुलह-ए-कुल नीति का हिस्सा।"},
+  {q:"'सुलह-ए-कुल' किसकी नीति थी?",o:["बाबर","हुमायूँ","अकबर","औरंगजेब"],a:2,e:"सुलह-ए-कुल (सबके साथ शांति) अकबर की धार्मिक सहिष्णुता का मूल सिद्धांत था। इबादतखाना (1575) इसी का हिस्सा था।"},
+  {q:"अकबर ने 'दीन-ए-इलाही' कब स्थापित किया?",o:["1556","1575","1582","1600"],a:2,e:"अकबर ने 1582 ई. में दीन-ए-इलाही धर्म स्थापित किया। बीरबल इसे मानने वाले एकमात्र हिंदू थे।"},
+  {q:"औरंगजेब ने जजिया कर पुनः कब लागू किया?",o:["1658","1665","1679","1690"],a:2,e:"औरंगजेब ने 1679 ई. में जजिया कर पुनः लागू किया। इससे हिंदुओं में भारी असंतोष फैला और मुगल पतन की शुरुआत हुई।"},
+  {q:"औरंगजेब ने किस सिख गुरु को शहीद करवाया?",o:["गुरु अर्जुन देव","गुरु तेग बहादुर","गुरु गोविंद सिंह","गुरु रामदास"],a:1,e:"औरंगजेब ने 1675 ई. में गुरु तेग बहादुर (नवें सिख गुरु) को इस्लाम न मानने पर शहीद करवाया।"},
+  {q:"मुगल साम्राज्य के अंतिम बादशाह कौन थे?",o:["शाह आलम II","अकबर II","मुहम्मद शाह","बहादुर शाह जफर"],a:3,e:"बहादुर शाह जफर (1837–1857) मुगल साम्राज्य के अंतिम बादशाह। 1857 की क्रांति में नेतृत्व → रंगून निर्वासन → 1862 मृत्यु।"},
+  {q:"नादिर शाह ने दिल्ली पर कब आक्रमण किया?",o:["1727","1733","1739","1748"],a:2,e:"नादिर शाह ने 1739 ई. में दिल्ली पर आक्रमण किया — मयूर सिंहासन ईरान ले गया। मुहम्मद शाह 'रंगीला' का काल।"},
+  {q:"प्लासी का युद्ध कब हुआ?",o:["1739","1757","1761","1764"],a:1,e:"प्लासी का युद्ध 1757 ई. में — क्लाइव vs सिराजुद्दौला → अंग्रेजी प्रभुत्व की शुरुआत। मध्यकाल के अंत का संकेत।"},
+  {q:"मध्यकाल का अंत किस घटना के साथ माना जाता है?",o:["नादिर शाह 1739","प्लासी 1757","1857–58 प्रथम स्वतंत्रता संग्राम","पानीपत-III 1761"],a:2,e:"मध्यकाल का अंत 1857–58 माना जाता है — बहादुर शाह जफर के निर्वासन और 1858 में ब्रिटिश राज की स्थापना के साथ।"},
+  {q:"शिवाजी का राज्याभिषेक कहाँ और कब हुआ?",o:["पुणे — 1670","रायगढ़ — 1674","सिंहगढ़ — 1672","प्रतापगढ़ — 1665"],a:1,e:"शिवाजी का राज्याभिषेक 1674 ई. में रायगढ़ में हुआ। गागाभट्ट ने राज्याभिषेक संस्कार किया।"},
+  {q:"मराठा कर व्यवस्था में 'सरदेशमुखी' कितने प्रतिशत था?",o:["5%","10%","20%","25%"],a:1,e:"सरदेशमुखी = उपज का 1/10 (10%) — मराठे दावा करते थे कि वे 'सरदेशमुख' (प्रधान प्रशासक) हैं इसलिए यह कर लेते थे।"},
+  {q:"पानीपत का तृतीय युद्ध (1761) किनके बीच हुआ?",o:["मराठा vs मुगल","मराठा vs अहमद शाह अब्दाली","अंग्रेज vs मराठा","मराठा vs हैदर अली"],a:1,e:"पानीपत-III (1761) — मराठा vs अहमद शाह अब्दाली → मराठा पराजित। इसने मराठा शक्ति को कमजोर किया।"},
+  {q:"विजयनगर साम्राज्य की राजधानी क्या थी?",o:["गुलबर्गा","बीदर","हम्पी","दौलताबाद"],a:2,e:"विजयनगर साम्राज्य की राजधानी हम्पी (कर्नाटक) — तुंगभद्रा नदी के तट पर। यूनेस्को विश्व धरोहर।"},
+  {q:"तालीकोटा युद्ध (1565) का दूसरा नाम क्या है?",o:["खानवा का युद्ध","राक्षसी-तंगड़ी का युद्ध","घाघरा का युद्ध","चंदावर का युद्ध"],a:1,e:"तालीकोटा युद्ध को 'राक्षसी-तंगड़ी का युद्ध' भी कहते हैं — विजयनगर vs 4 दक्कन सल्तनतें।"},
+  {q:"'आइन-ए-अकबरी' किसने लिखी?",o:["बाबर","बरनी","अबुल फजल","इब्न बतूता"],a:2,e:"आइन-ए-अकबरी — अबुल फजल। यह अकबरनामा का तीसरा भाग है — अकबर के शासन का विस्तृत विवरण।"},
+  {q:"अमीर खुसरो ने कौन-से वाद्ययंत्र बनाए?",o:["वीणा और मृदंगम","सितार और तबला","सरोद और सारंगी","बाँसुरी और तानपुरा"],a:1,e:"अमीर खुसरो को सितार और तबला के आविष्कार का श्रेय — साथ ही कव्वाली परंपरा भी शुरू की।"},
+  {q:"कुतुब मीनार की ऊँचाई कितनी है?",o:["52.5 मी.","62.5 मी.","72.5 मी.","82.5 मी."],a:2,e:"कुतुब मीनार — 72.5 मीटर | भारत की सबसे ऊँची मीनार | यूनेस्को विश्व धरोहर।"},
+  {q:"बहमनी साम्राज्य टूटकर कितने राज्यों में विभाजित हुआ?",o:["3","4","5","6"],a:2,e:"बहमनी साम्राज्य 1518 में 5 सल्तनतों में टूटा — बीजापुर, गोलकुंडा, बीदर, बरार, अहमदनगर।"},
+  {q:"हुमायूँनामा किसने लिखी?",o:["हुमायूँ ने स्वयं","अबुल फजल","गुलबदन बेगम","बैरम खान"],a:2,e:"हुमायूँनामा हुमायूँ की बहन गुलबदन बेगम ने लिखी — हुमायूँ के जीवन का विवरण।"},
+  {q:"भारत में तोपखाने का पहली बार प्रयोग किसने किया?",o:["अकबर","बाबर","शेरशाह","इब्राहिम लोदी"],a:1,e:"बाबर ने पानीपत प्रथम (1526) में तुलगमा रणनीति और तोपखाने का भारत में पहली बार प्रयोग किया।"},
+];
+
+let sc=0, tot=0;
+
+function buildMCQ(){
+  const c=document.getElementById('mcqbox');
+  Q.forEach((m,i)=>{
+    const d=document.createElement('div');
+    d.className='mcq';
+    d.innerHTML=`<div class="mqq"><strong>Q${i+1}.</strong> ${m.q}</div>
+    <div class="opts">${m.o.map((o,j)=>`<div class="opt" onclick="chk(${i},${j})" id="o${i}_${j}">(${String.fromCharCode(65+j)}) ${o}</div>`).join('')}</div>
+    <button class="sbtn" onclick="sa(${i})">उत्तर देखें</button>
+    <div class="mans" id="a${i}">✅ सही उत्तर: <strong>(${String.fromCharCode(65+m.a)}) ${m.o[m.a]}</strong><br><br>📝 ${m.e}</div>`;
+    c.appendChild(d);
+  });
+}
+
+function chk(qi,sel){
+  const b=document.querySelectorAll('.mcq')[qi];
+  if(b.dataset.done) return;
+  b.dataset.done='1';
+  b.querySelectorAll('.opt').forEach((o,j)=>{
+    o.style.pointerEvents='none';
+    if(j===Q[qi].a) o.classList.add('ok');
+    else if(j===sel) o.classList.add('no');
+  });
+  document.getElementById('a'+qi).classList.add('on');
+  tot++;
+  if(sel===Q[qi].a) sc++;
+  const sb=document.getElementById('scorebox');
+  sb.classList.add('on');
+  document.getElementById('scoreval').textContent=sc+'/'+tot;
+}
+function sa(qi){
+  document.getElementById('a'+qi).classList.add('on');
+}
+buildMCQ();
+
+// PROGRESS
+window.addEventListener('scroll',()=>{
+  const h=document.documentElement;
+  document.getElementById('prog').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';
+});
+</script>
+</body>
+</html>
